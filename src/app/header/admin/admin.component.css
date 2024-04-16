@@ -1,0 +1,18 @@
+.formStyle{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+.formStyle .inCenter{
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+}
+.formStyle .inCenter .input{
+    width: 240px;
+    margin-right: 42px;
+}
+.formStyle .inCenter .block{
+    display: block;
+    margin-bottom: 20px;
+}

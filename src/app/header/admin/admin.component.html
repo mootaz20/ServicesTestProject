@@ -1,0 +1,22 @@
+<div class="formStyle">
+    <div class="inCenter">
+        <input type="text" [(ngModel)]="name" placeholder="Your Name" class="input">
+        <select name="select" [(ngModel)]="gender"  style="width:240px; " id="select">
+            <option value="Male" selected>Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <div class="block">
+            <select name="select1" [(ngModel)]="subType" style="width:240px;margin-right: 42px; " id="select1">
+                <option value="Monthly" selected>Monthly</option>
+                <option value="Daily">Daily</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+            <select name="select2" [(ngModel)]="status" style="width:240px; " id="select2">
+                <option value="active" selected>active</option>
+                <option value="inactive">inactive</option>
+             </select>
+        </div>
+        <button class="btn btn-primary" (click)="createNewUser()" style="width: 100%;">CREATE</button>
+    </div>
+</div>
+<app-user-details></app-user-details>

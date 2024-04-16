@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="row justify-content-center navv">
+        <div class="col-4">
+            <h1 class="text">MY PROJECT</h1>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-warning me-3" (click)="onHome()">Home</button>
+            <button class="btn btn-dark me-3" (click)="onAdmin()">Admin</button>
+            <button class="btn btn-primary me-3" (click)="OnClick()">Subscribe</button>
+        </div>
+    </div>
+
+    <div [ngSwitch]="selected">
+       <app-home *ngSwitchDefault="'home'"></app-home>
+       <app-admin *ngSwitchCase="'admin'"></app-admin>
+    </div>
+</div>
